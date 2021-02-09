@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Title="TabViewShell"
+             x:Class="TabViewShell.View.TabbedPage">
+
+    <StackLayout>
+        <xct:TabView
+                TabStripPlacement="Bottom"
+                TabStripBackgroundColor="Blue"
+                TabStripHeight="60"
+                TabIndicatorColor="Yellow"
+                TabContentBackgroundColor="Yellow"
+                IsSwipeEnabled="True">
+
+            <xct:TabViewItem
+                    Text="Tab 1"
+                    TextColor="White"
+                    TextColorSelected="Yellow"
+                    FontSize="12">
+                <StackLayout 
+                        BackgroundColor="Gray">
+                    <Label
+                            Margin="100"
+                            Text="Welcome to tabview in xamarin forms shell" />
+                </StackLayout>
+            </xct:TabViewItem>
+
+            <xct:TabViewItem
+                    Text="Tab 2"
+                    TextColor="White"
+                    TextColorSelected="Yellow"
+                    FontSize="12">
+
+                <xct:TabView
+                    TabStripPlacement="Top"
+                    TabStripBackgroundColor="Blue"
+                    TabStripHeight="60"
+                    TabIndicatorColor="Yellow"
+                    TabContentBackgroundColor="Yellow"
+                    IsSwipeEnabled="True">
+
+                    <xct:TabViewItem
+                        Text="Tab 1"
+                        TextColor="White"
+                        TextColorSelected="Yellow"
+                        FontSize="12">
+                        <StackLayout 
+                            BackgroundColor="Gray">
+                            <Label
+                                Margin="100"
+                                Text="TabContent1" />
+                        </StackLayout>
+                    </xct:TabViewItem>
+
+                    <xct:TabViewItem
+                        Text="Tab 2"
+                        TextColor="White"
+                        TextColorSelected="Yellow"
+                        FontSize="12">
+                        <StackLayout>
+                            <Label    
+                                Margin="100"
+                                Text="TabContent2" />
+                        </StackLayout>
+                    </xct:TabViewItem>
+                </xct:TabView>
+
+            </xct:TabViewItem>
+        </xct:TabView>
+    </StackLayout>
+
+
+</ContentPage>
